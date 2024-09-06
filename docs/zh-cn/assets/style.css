@@ -1,0 +1,63 @@
+@media (prefers-color-scheme: dark) {
+    .logo {
+        filter: invert(1);
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html:has(body.device-small) {
+    font-size: 15px;
+}
+html:has(body.device-tablet) {
+    #feature-column {
+        white-space: normal !important;
+    }
+}
+html:has(body.device-large) {
+    font-size: 16px;
+
+    #button-github {
+        --height: 46px;
+    }
+    #index-grid {
+        --gap: 5rem;
+    }
+    #feature-column {
+        width: min-content;
+        white-space: nowrap;
+    }
+}
+
+.code-block {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+
+.ts-text.is-code {
+    line-height: 1.6;
+    display: inline-block;
+    padding: 0 0.45rem;
+}
+
+.ts-image.is-bordered:hover img {
+    opacity: 0.8;
+    border-color: var(--ts-gray-400);
+}
+
+.index-tutoriallist {
+    --gap: 1rem;
+}
+
+.index-featurelist {
+    --gap: 0.25rem;
+}
+
+#footer-textblock {
+    max-width: 790px;
+    line-height: 2.3;
+}
